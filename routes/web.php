@@ -16,3 +16,11 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+// $router->get('generate', 'PasswordController@generate');
+
+// $router->get('generate', function () use ($router) {
+//     return response()->json([], 200);
+// });
+
+$router->get('generate', 'PasswordController@generate');
